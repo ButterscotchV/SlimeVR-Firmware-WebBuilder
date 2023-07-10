@@ -66,9 +66,6 @@ export class ConfigService {
 
       entities: ['dist/**/*.entity.js'],
       migrations: ['dist/migrations/*.js'],
-      cli: {
-        migrationsDir: 'dist/migrations',
-      },
       logging: this.appEnv() == EnvType.PROD ? false : 'all',
     };
   }
@@ -76,11 +73,14 @@ export class ConfigService {
   public getS3Config(): S3ModuleOptions {
     return {
       config: {
-        accessKeyId: this.getValue('S3_ACCESS_KEY'),
-        secretAccessKey: this.getValue('S3_SECRET_KEY'),
+        credentials: {
+          accessKeyId: this.getValue('S3_ACCESS_KEY'),
+          secretAccessKey: this.getValue('S3_SECRET_KEY'),
+        },
         endpoint: this.getS3Endpoint(),
-        s3ForcePathStyle: true,
-        signatureVersion: 'v4',
+        forcePathStyle: true,
+        // No longer permitted by the new S3 API
+        // signatureVersion: 'v4',
       },
     };
   }

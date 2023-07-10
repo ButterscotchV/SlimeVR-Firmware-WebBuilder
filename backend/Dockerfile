@@ -8,15 +8,10 @@ RUN curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-inst
 RUN python3 get-platformio.py
 ENV PATH="${PATH}:/root/.platformio/penv/bin"
 
-
-
-
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt install -y nodejs
 
 WORKDIR /app
-
-
 
 COPY package*.json ./
 RUN npm install
