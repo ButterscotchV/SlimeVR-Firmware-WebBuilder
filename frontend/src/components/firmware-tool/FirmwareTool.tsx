@@ -136,7 +136,7 @@ export function FirmwareTool() {
         </p>
         <p>
           {ghLink("l0ud", "sfusion", "SlimeVR-Tracker-ESP-BMI270")} -
-          [DEPRECIATED] - Use SlimeVR/main instead.
+          [DEPRECATED] - Use SlimeVR/main instead
         </p>
         <p>
           {ghLink("furrycoding", "mpu6050_nodmp")} - Adds a new sensor that uses
