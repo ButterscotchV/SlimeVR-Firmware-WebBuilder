@@ -34,16 +34,6 @@ const link = (href: string, text: string, prefix: string = "https://") => {
     </Link>
   );
 };
-const ghLink = (
-  owner: string,
-  branch: string,
-  repo: string = "SlimeVR-Tracker-ESP",
-) => {
-  return link(
-    `github.com/${owner}/${repo}/tree/${branch}`,
-    `${owner}/${branch}`,
-  );
-};
 
 export function FirmwareTool() {
   const { serialSupported } = useSerial();
