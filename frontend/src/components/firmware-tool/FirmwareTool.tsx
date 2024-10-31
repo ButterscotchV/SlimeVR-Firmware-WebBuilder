@@ -105,12 +105,6 @@ export function FirmwareTool() {
             ))
         )}
       </Alert>
-      <Alert variant="filled" severity="warning" sx={{ my: 2 }}>
-        IMPORTANT: {ghLink("SlimeVR", "v0.3.3")} is now being redirected to{" "}
-        {ghLink("ButterscotchV", "v0.3.3-bno-patched")}. Using BNOs with v0.3.3
-        is still not recommended, but it should work with the patch. The
-        original release can still be found on the SlimeVR repository.
-      </Alert>
       <Paper
         variant="outlined"
         sx={{ my: { xs: 3, md: 3 }, p: { xs: 1, md: 3 } }}
