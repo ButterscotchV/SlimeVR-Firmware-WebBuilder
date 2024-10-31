@@ -4,10 +4,6 @@
       {
         "branch": "main",
         "description": "SlimeVR development branch"
-      },
-      {
-        "branch": "feat/magnetometer-toggle",
-        "description": "BNO08X magnetometer toggle support"
       }
     ]
   },
