@@ -362,8 +362,9 @@ export function useFirmwareTool() {
     for (const imu of buildSettings.imus?.map(
       (imu: { type: string }) => imu.type,
     ) ?? []) {
-      const imuBranchRestrictions: string[] = branchRestrictions[imu] ?? [];
-      if (!imuBranchRestrictions.includes(release)) {
+      const imuBranchRestrictions: string[] | undefined =
+        branchRestrictions[imu];
+      if (imuBranchRestrictions && !imuBranchRestrictions.includes(release)) {
         setError({
           title: "Invalid configuration",
           message: `${imu} is only supported by ${lf.format(imuBranchRestrictions)}.`,
@@ -376,8 +377,9 @@ export function useFirmwareTool() {
         return;
       }
 
-      const imuUnsupportedBranches: string[] = unsupportedBranches[imu] ?? [];
-      if (imuUnsupportedBranches.includes(release)) {
+      const imuUnsupportedBranches: string[] | undefined =
+        unsupportedBranches[imu];
+      if (imuUnsupportedBranches && imuUnsupportedBranches.includes(release)) {
         setError({
           title: "Invalid configuration",
           message: `${imu} is not supported by ${lf.format(imuUnsupportedBranches)}.`,
