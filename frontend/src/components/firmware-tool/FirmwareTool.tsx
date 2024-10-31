@@ -67,11 +67,6 @@ export function FirmwareTool() {
           </p>
         </Alert>
       )}
-      <Alert variant="filled" severity="warning" sx={{ my: 2 }}>
-        This is an experimental version of the SlimeVR Firmware Tool run by
-        Butterscotch, so uptime, functionality, and performance is not
-        guaranteed.
-      </Alert>
       <Alert variant="outlined" severity="info" sx={{ my: 2 }}>
         <p>
           {link(
