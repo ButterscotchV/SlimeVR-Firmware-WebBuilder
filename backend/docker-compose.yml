@@ -3,10 +3,10 @@ services:
     image: postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: slimevr
+      POSTGRES_USER: ${POSTGRES_USER}
       PGUSER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: slimevr
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - database-volume:/var/lib/postgresql/data
     networks:
