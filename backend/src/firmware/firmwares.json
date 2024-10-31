@@ -35,7 +35,11 @@
     "SlimeVR-Tracker-ESP": [
       {
         "branch": "sfusion-tuned-mbe",
-        "description": "Meia's sfusion with MBE (Motion bias estimation) and some tuned VQF Parameters"
+        "description": "Meia's sfusion with MBE (Motion Bias Estimation) and some tuned VQF Parameters"
+      },
+      {
+        "branch": "dynamic-sfusion",
+        "description": "Meia's sfusion with MBE and dynamic calibration"
       }
     ]
   }
