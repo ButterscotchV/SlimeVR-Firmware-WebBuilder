@@ -61,9 +61,9 @@ export function FirmwareTool() {
     <Container component="main" maxWidth="md" sx={{ my: 3 }}>
       {!serialSupported && (
         <Alert variant="filled" severity="error" sx={{ my: 2 }}>
-          This Browser does not support the WebSerial API.
+          This browser does not support the WebSerial API.
           <p>
-            Please use a different browser. (Chrome, Microsoft Edge or Opera)
+            Please use a different browser (Chrome, Edge, Opera, etc).
           </p>
         </Alert>
       )}
