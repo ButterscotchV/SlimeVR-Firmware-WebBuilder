@@ -20,6 +20,10 @@
       {
         "branch": "alt-port-main",
         "description": "Based off SlimeVR/main with \"trackerPort\" set to 6970 instead of 6969"
+      },
+      {
+        "branch": "wifi-std",
+        "description": "Improved WiFi logging (PR #358)"
       }
     ]
   },
