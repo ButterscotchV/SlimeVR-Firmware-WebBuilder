@@ -62,9 +62,7 @@ export function FirmwareTool() {
       {!serialSupported && (
         <Alert variant="filled" severity="error" sx={{ my: 2 }}>
           This browser does not support the WebSerial API.
-          <p>
-            Please use a different browser (Chrome, Edge, Opera, etc).
-          </p>
+          <p>Please use a different browser (Chrome, Edge, Opera, etc).</p>
         </Alert>
       )}
       <Alert variant="outlined" severity="info" sx={{ my: 2 }}>
