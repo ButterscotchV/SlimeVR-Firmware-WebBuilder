@@ -27,6 +27,14 @@
       }
     ]
   },
+  "l0ud": {
+    "SlimeVR-Tracker-ESP-BMI270": [
+      {
+        "branch": "main",
+        "description": "[DEPRECATED] - Support for BMI270 without sfusion"
+      }
+    ]
+  },
   "wigwagwent": {
     "LSM6DSV16X": [
       {
