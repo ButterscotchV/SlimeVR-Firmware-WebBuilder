@@ -1,11 +1,6 @@
 {
   "SlimeVR": {
-    "SlimeVR-Tracker-ESP": [
-      {
-        "branch": "main",
-        "description": "SlimeVR development branch"
-      }
-    ]
+    "SlimeVR-Tracker-ESP": []
   },
   "ButterscotchV": {
     "SlimeVR-Tracker-ESP": [
