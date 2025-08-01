@@ -72,7 +72,7 @@ export function fillMissingValues(target: any, defaults: any) {
 }
 
 const lf = new Intl.ListFormat("en");
-const newBranches = ["kounocom/dynamic-sfusion", "SlimeVR/main", "SlimeVR/v0.5.0", "SlimeVR/v0.5.2", "SlimeVR/v0.5.4", "SlimeVR/v0.6.0"];
+const newBranches = ["kounocom/dynamic-sfusion", "SlimeVR/main", "SlimeVR/v0.5.0", "SlimeVR/v0.5.2", "SlimeVR/v0.5.4", "SlimeVR/v0.6.2"];
 const branchRestrictions: any = {
   IMU_LSM6DS3: newBranches,
   IMU_ICM45686: newBranches,
