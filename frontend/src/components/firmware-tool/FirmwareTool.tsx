@@ -65,6 +65,11 @@ export function FirmwareTool() {
           <p>Please use a different browser (Chrome, Edge, Opera, etc).</p>
         </Alert>
       )}
+      <Alert variant="outlined" severity="warning" sx={{ my: 2 }}>
+        This website is no longer maintained, use at your own risk. There is a
+        "DIY Firmware Tool" within the SlimeVR app settings tab that is
+        maintained.
+      </Alert>
       <Alert variant="outlined" severity="info" sx={{ my: 2 }}>
         <p>
           {link(
