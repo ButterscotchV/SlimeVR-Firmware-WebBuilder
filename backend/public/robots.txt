@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-# Deny query URLs, allow everything else
-Disallow: /*?*
+# Don't allow indexing any of the API
+Disallow: /

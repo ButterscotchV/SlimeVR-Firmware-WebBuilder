@@ -3,6 +3,8 @@ import { TypeOrmModule } from "@nestjs/typeorm";
 import { FirmwareModule } from "./firmware/firmware.module";
 import { connectionSource } from "./config/typeorm.datasource";
 import { CacheModule } from "@nestjs/cache-manager";
+import { ServeStaticModule } from "@nestjs/serve-static";
+import { join } from "path";
 
 @Module({
   imports: [
@@ -14,6 +16,10 @@ import { CacheModule } from "@nestjs/cache-manager";
       },
     }),
     FirmwareModule,
+    // Serve robots.txt (& more)
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, "..", "public"),
+    }),
   ],
   controllers: [],
   providers: [],
