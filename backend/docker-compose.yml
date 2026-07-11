@@ -35,6 +35,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./test:/app/test
+      - ./public:/app/public
     networks:
       - slimevr-network
     secrets:
