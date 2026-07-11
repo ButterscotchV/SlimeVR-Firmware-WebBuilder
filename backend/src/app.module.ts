@@ -19,6 +19,10 @@ import { join } from "path";
     // Serve robots.txt (& more)
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, "..", "public"),
+      serveStaticOptions: {
+        fallthrough: false,
+        index: false,
+      },
     }),
   ],
   controllers: [],
