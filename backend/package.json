@@ -88,5 +88,8 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "allowScripts": {
+    "@nestjs/core@10.3.2": true
   }
 }
